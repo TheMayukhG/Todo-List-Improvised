@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .text-orange {
+            color: orange;
+        }
+        
+        .text-blue {
+            color: var(--primary);
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>STH</title>
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+        <a class="navbar-brand" href="#">Market List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#body">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#table">Items</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="my-5 jumbotron text-success">
+        <h1 class="display-5">Enter Details
+            <!--<span class="material-icons-outlined">east</span>--><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="transform:rotate(90deg); position:relative; top:10px;" fill="currentColor" class="bi bi-arrow-90deg-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z" />
+            </svg>
+
+        </h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Name Of Task">
+
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="" class="form-control" id="description" cols="30" rows="5" placeholder="Description"></textarea>
+        </div>
+        <a class="btn btn-success" style="line-height: 44px;" href="#" role="button" id="add">Add To List<span
+                style="position: relative; top:7px; left: 3px;" class="material-icons-outlined">
+                add_box
+            </span></a>
+        <a class="btn btn-danger" style="line-height: 44px;" href="#" onclick="clearStorage()" role="button" id="add">Clear List<span
+                style="position: relative; top:7px; left: 3px;" class="material-icons-outlined">
+                highlight_off
+            </span></a>
+        </p>
+    </div>
+
+    <table class="table table-striped" id="table">
+        <thead>
+            <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">Item Title</th>
+                <th scope="col">Item Description</th>
+                <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <th scope="row">1</th>
+                <td>Get some Coffee</td>
+                <td>You need coffee as you are a coder</td>
+                <td><button class="btn btn-sm btn-primary">Delete</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="Sty0.css"> -->
+</body>
+
+</html>
